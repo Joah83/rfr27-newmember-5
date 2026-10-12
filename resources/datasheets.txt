@@ -1,0 +1,6 @@
+Arduino Nano
+https://docs.arduino.cc/hardware/nano/
+
+Multiplexer CD74HC4067
+https://www.ti.com/lit/ds/symlink/cd74hc4067.pdf?ts=1791728284581
+

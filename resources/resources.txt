@@ -1,0 +1,20 @@
+
+Update this with useful videos, if you find any, and include any confusing code that you put so we all learn.
+
+This is how to write multiple .h .cpp, but we use #pragma once instead of #ifndef
+https://www.youtube.com/watch?v=BdstuZP6l5E
+
+All about lowering memory
+https://support.arduino.cc/hc/en-us/articles/360013825179-Reduce-the-size-and-memory-usage-of-your-sketch
+
+Github Commands cheatsheet
+https://education.github.com/git-cheat-sheet-education.pdf
+
+explanation of various code:
+
+    Inside of multiplexer.h
+        inline : inline merges all definitions of a given variable
+        Prototype : basically tells the compiler that the function is coming does not crash
+        #pragma once : ensures header file is only included once during compilation
+
+        
