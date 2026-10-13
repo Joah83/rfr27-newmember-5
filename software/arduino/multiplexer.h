@@ -3,12 +3,14 @@
 #include <Arduino.h>
 
 // Various pins for multiplexer -- incomplete
-const int s0 =
-const int s1 =
-const int s2 =
-const int s3 =
-const int enableMultiplexerPin =
-const int readMultiplexerPin =
+// aPin,bPin,cPin is for A, B, C selection
+// inhibit is pin that disables multiplexer
+// comPin is pin that gets signal from multiplexer
+const int aPin =
+const int bPin =
+const int cPin =
+const int inhibitPin =
+const int comPin =
 
 // Prototypes
 void setupMult();
