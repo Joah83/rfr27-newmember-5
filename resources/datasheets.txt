@@ -4,3 +4,6 @@ https://docs.arduino.cc/hardware/nano/
 Multiplexer CD4051BE
 https://www.ti.com/product/CD4051B#tech-docs
 
+Diode Array on LI-ON batteries
+https://enepaq.com/wp-content/uploads/2025/02/Sony-Murata-VTC5A-Li-ion-Battery-Module-With-Temperature-Sensor-Datasheet-.pdf
+

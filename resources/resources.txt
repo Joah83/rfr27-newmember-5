@@ -10,6 +10,12 @@ https://support.arduino.cc/hc/en-us/articles/360013825179-Reduce-the-size-and-me
 Github Commands cheatsheet
 https://education.github.com/git-cheat-sheet-education.pdf
 
+Github Commits and Branches conventions for naming
+https://github.com/pvdlg/conventional-commit-types
+https://www.conventionalcommits.org/en/v1.0.0/
+https://conventionalbranch.org
+
+
 explanation of various code:
 
     Inside of multiplexer.h
