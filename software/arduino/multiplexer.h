@@ -9,7 +9,7 @@
 const int aPin =
 const int bPin =
 const int cPin =
-const int inhibitPin =
+// const int inhibitPin =
 const int comPin =
 
 // Prototypes

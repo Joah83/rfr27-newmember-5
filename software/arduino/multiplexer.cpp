@@ -5,37 +5,52 @@ void setupMult() {
   pinMode(aPin, OUTPUT);
   pinMode(bPin, OUTPUT);
   pinMode(cPin, OUTPUT);
-  pinMode(inhibitPin, OUTPUT);
+  // pinMode(inhibitPin, OUTPUT);
   pinMode(comPin, INPUT);
-  enableMult();
+  // enableMult();
   Serial.println(F("1. Multiplexer setup complete"));
 }
 
-// i thought we needed to disable it and stuff first before switching
-// but it takes nanoseconds while arduino is microseconds so doesnt matter
-// just switch using select multiplexer while it is enabled ig
+/* Decided we do not need these as it will be constantly on anyway
 void enableMult() {
   // code to enable multiplexer
-
+  digitalWrite(inhibitPin, 0);
   enabled=true;
 }
 
 void disableMult() {
   // code that disables multiplexer
-
+  digitalWrite(inhibitPin, 1);
   enabled=false;
 }
+*/
 
 // selectedPin: 0-7 int, returns nothing
 void selectMult(int selectedPin) {
-  // code to return error if number is not within 0-7 inclusive
-  // code to select a pin on multiplexer
-  // basically digitalwrite binary to c, b, a pins
+  // 4s place check
+  if (selectedPin & 4) {
+    digitalWrite(aPin, 1);
+  } else {
+    digitalWrite(aPin, 0);
+  }
+
+  // 2s place check
+  if (selectedPin & 2) {
+    digitalWrite(bPin, 1);
+  } else {
+    digitalWrite(bPin, 0);
+  }
+
+  // 1s place check
+  if (selectedPin & 1) {
+    digitalWrite(cPin, 1);
+  } else {
+    digitalWrite(cPin, 0);
+  }
 }
 
 // read the value of the multiplexer at the current pin if it is on
 int readMult() {
-  // check if enabled
-  // read
+  return analogRead(comPin);
 }
 
