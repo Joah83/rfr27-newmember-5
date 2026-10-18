@@ -9,4 +9,4 @@ int findHighestTemp(int tempValues[], int size);
 float convertFloatTemp(int rawHighestData);
 
 
-inline int temperatureArray[8]; 
+inline int temperatureArray[tempArraySize]; 
