@@ -11,27 +11,13 @@ void setupMult() {
   Serial.println(F("1. Multiplexer setup complete"));
 }
 
-/* Decided we do not need these as it will be constantly on anyway
-void enableMult() {
-  // code to enable multiplexer
-  digitalWrite(inhibitPin, 0);
-  enabled=true;
-}
-
-void disableMult() {
-  // code that disables multiplexer
-  digitalWrite(inhibitPin, 1);
-  enabled=false;
-}
-*/
-
 // selectedPin: 0-7 int, returns nothing
 void selectMult(int selectedPin) {
   // 4s place check
   if (selectedPin & 4) {
-    digitalWrite(aPin, 1);
+    digitalWrite(cPin, 1);
   } else {
-    digitalWrite(aPin, 0);
+    digitalWrite(cPin, 0);
   }
 
   // 2s place check
@@ -43,9 +29,9 @@ void selectMult(int selectedPin) {
 
   // 1s place check
   if (selectedPin & 1) {
-    digitalWrite(cPin, 1);
+    digitalWrite(aPin, 1);
   } else {
-    digitalWrite(cPin, 0);
+    digitalWrite(aPin, 0);
   }
 }
 
