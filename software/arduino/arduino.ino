@@ -1,4 +1,3 @@
-#include <Wire.h>
 #include "multiplexer.h"
 #include "temperature.h" // stuff regarding convert to temp
 #include "i2c.h" // stuff regarding data to i2c
